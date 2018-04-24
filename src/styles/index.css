@@ -19,3 +19,21 @@ h4 {
 p {
   font-size: 1.4rem;
 }
+
+.chatty-img {
+  margin-bottom: -60px;
+}
+.wikibits-img {
+  margin-bottom: -140px;
+  margin-top: -20px;
+}
+.findfit-img {
+  margin-top: -60px;
+}
+@media only screen and (max-width: 900px) {
+  .chatty-img,
+  .wikibits-img,
+  .findfit-img {
+    margin: 0;
+  }
+}
