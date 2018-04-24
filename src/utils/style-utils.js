@@ -6,4 +6,10 @@ export const media = {
       ${css(...args)};
     }
   `,
+
+  tablet: (...args) => css`
+    @media (max-width: 900px) {
+      ${css(...args)};
+    }
+  `,
 }

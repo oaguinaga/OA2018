@@ -11,5 +11,11 @@ h4 {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
   font-weight: 400;
+  color: #4f4f4f;
+}
+
+p {
+  font-size: 1.4rem;
 }

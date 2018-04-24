@@ -6,25 +6,25 @@ import { media } from '../utils/style-utils'
 
 const buttonStyles = theme('mode', {
   primary: css`
-    border: 4px solid #7bed9f;
+    border-color: #7bed9f;
     color: #ffffff;
     :hover {
       background: #ffffff;
-      color: #7bed9f;
-      border: 4px solid #ffffff;
+      color: #5258c9;
+      border-color: #ffffff;
     }
   `,
   secondary: css`
-    border: 4px solid #ffffff;
+    border-color: #ffffff;
     color: #7bed9f;
     :hover {
       background: #7bed9f;
       color: #ffffff;
-      border: 4px solid #7bed9f;
+      border-color: #7bed9f;
     }
   `,
   tertiary: css`
-    border: 4px solid #5258c9;
+    border-color: #5258c9;
     color: #5258c9;
     :hover {
       background: #5258c9;
@@ -33,8 +33,10 @@ const buttonStyles = theme('mode', {
   `,
 })
 
-const Btn = styled.button`
-  font-size: 24px;
+const Btn = styled.a`
+  text-decoration: none;
+  border: 3px solid;
+  font-size: 2rem;
   padding: 10px 20px;
   cursor: pointer;
   text-transform: uppercase;
@@ -47,10 +49,16 @@ const Btn = styled.button`
 
   ${buttonStyles};
 `
-const Button = ({ mode, text }) => {
+const Button = ({ mode, text, action, target }) => {
   return (
     <ThemeProvider theme={{ mode }}>
-      <Btn>{text}</Btn>
+      <Btn
+        href={action}
+        target={target ? target : ''}
+        rel="noopener noreferrer"
+      >
+        {text}
+      </Btn>
     </ThemeProvider>
   )
 }

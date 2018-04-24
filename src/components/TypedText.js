@@ -22,9 +22,9 @@ class TypedText extends Component {
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options)
   }
-  componentWillUnmount() {
-    this.typed.destroy()
-  }
+  // componentWillUnmount() {
+  //   this.typed.destroy()
+  // }
 
   render() {
     return (

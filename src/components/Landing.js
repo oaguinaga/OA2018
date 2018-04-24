@@ -17,6 +17,8 @@ const LandingWrapper = styled.div`
     linear-gradient(141deg, #4e54c8 0%, #8f94fb 100%);
   background-size: 70px, auto;
   clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 100%);
+  overflow: hidden;
+  margin-bottom: -110px;
 `
 
 const LandingContainer = styled.div`
@@ -26,18 +28,18 @@ const LandingContainer = styled.div`
 
   h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 6rem;
     margin: 0;
     ${media.handheld`
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     `};
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffffff;
     ${media.handheld`
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     `};
   }
 `
@@ -79,8 +81,17 @@ class Landing extends Component {
             ]}
           />
           <ButtonWrapper>
-            <Button mode="primary" text="let's talk" />
-            <Button mode="secondary" text="my resume" />
+            <Button
+              mode="primary"
+              text="let's talk"
+              action="mailto:og.aguinaga@gmail.com"
+            />
+            <Button
+              mode="secondary"
+              text="my resume"
+              action="https://www.linkedin.com/in/oaguinaga/"
+              target="_blank"
+            />
           </ButtonWrapper>
         </LandingContainer>
       </LandingWrapper>
