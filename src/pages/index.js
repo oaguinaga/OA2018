@@ -21,22 +21,22 @@ export default IndexPage
 export const query = graphql`
   query WorkImages {
     chatty: imageSharp(id: { regex: "/chatty-mock.png/" }) {
-      sizes(maxWidth: 560) {
+      sizes(quality: 90) {
         ...GatsbyImageSharpSizes
       }
     }
     wikibits: imageSharp(id: { regex: "/wikibits-mock.png/" }) {
-      sizes(maxWidth: 560) {
+      sizes(quality: 90) {
         ...GatsbyImageSharpSizes
       }
     }
     findfit: imageSharp(id: { regex: "/findfit-mock.png/" }) {
-      sizes(maxWidth: 560) {
+      sizes(quality: 90) {
         ...GatsbyImageSharpSizes
       }
     }
     koddy: imageSharp(id: { regex: "/koddy-mock.png/" }) {
-      sizes(maxWidth: 560) {
+      sizes(quality: 90) {
         ...GatsbyImageSharpSizes
       }
     }
