@@ -35,6 +35,12 @@ const LandingContainer = styled.div`
     `};
   }
 
+  .typed-container {
+    ${media.handheld`
+      height: 8rem;
+    `};
+  }
+
   h2 {
     font-size: 4rem;
     color: #ffffff;
@@ -71,15 +77,17 @@ class Landing extends Component {
             Hola, I'm <strong>Omar!</strong>
           </h1>
           <h2>I design & build</h2>
-          <TypedText
-            strings={[
-              'amazing experiences for the web.',
-              'user interfaces.',
-              'landing pages.',
-              'corporate websites.',
-              'web applications.',
-            ]}
-          />
+          <div className="typed-container">
+            <TypedText
+              strings={[
+                'amazing experiences for the web.',
+                'user interfaces.',
+                'landing pages.',
+                'corporate websites.',
+                'web applications.',
+              ]}
+            />
+          </div>
           <ButtonWrapper>
             <Button
               mode="primary"
