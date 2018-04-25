@@ -23,6 +23,12 @@ const TagContainer = styled.span`
   margin: 1rem 0.5rem 0 0;
   border-radius: 10px;
   width: auto;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+  :hover {
+    transform: scale(1.1);
+  }
 
   ${tagStyles};
 `

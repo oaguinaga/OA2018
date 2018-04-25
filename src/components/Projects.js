@@ -42,6 +42,7 @@ class Projects extends Component {
       <div>
         {projects.map((project, i) => (
           <Work
+            projectId = {i}
             key={project.name}
             workData={project}
             data={data}

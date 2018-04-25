@@ -3,12 +3,16 @@ import Link from 'gatsby-link'
 import Landing from '../components/Landing'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const IndexPage = ({ data }) => (
   <div>
     <Landing />
     <Skills />
     <Projects data={data} />
+    <Contact />
+    <Footer />
   </div>
 )
 

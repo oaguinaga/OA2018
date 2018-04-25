@@ -86,10 +86,43 @@ const TagWrapper = styled.div`
   flex-wrap: wrap;
 `
 
-const Work = ({ workData, data, mode }) => {
+const WorkTitle = styled.div`
+  padding-top: 40px;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    color: #ffffff;
+    font-size: 5rem;
+  }
+
+  h4 {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    a {
+      color: #7bed9f;
+      text-decoration: none;
+    }
+  }
+`
+
+const Work = ({ workData, data, mode, projectId }) => {
   return (
     <ThemeProvider theme={{ mode }}>
       <WorkWrapper>
+        {projectId === 0 && (
+          <WorkTitle>
+            <h1>
+              My <strong>Work</strong>{' '}
+            </h1>
+            <h4>
+              Want to know more?{' '}
+              <a href="mailto:og.aguinaga@gmail.com">Email me</a>{' '}
+            </h4>
+          </WorkTitle>
+        )}
         <WorkContainer>
           <Img
             className={`${workData.name}-img`}
