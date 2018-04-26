@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "omar-aguinaga-web-developer",
+  "description": "Omar Aguinaga | Full Stack Developer",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Omar Aguinaga <og.aguinaga@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-image": "^1.0.47",
@@ -21,9 +21,7 @@
     "styled-theming": "^2.2.0",
     "typed.js": "^2.0.6"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["aguinaga"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
