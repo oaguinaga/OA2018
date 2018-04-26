@@ -10,7 +10,7 @@ const projects = [
     desc:
       'Chatty is a web application where people can connect by joining to different groups and chat about common interests. I designed both the front-end and back-end of this application.',
     tech: [
-      'Agular',
+      'Angular',
       'HTML',
       'CSS',
       'Javascript (ES6)',
