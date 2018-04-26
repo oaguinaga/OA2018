@@ -38,7 +38,7 @@ module.exports = {
       options: {
         name: 'Omar Aguinaga | Full Stack Developer',
         short_name: 'Omar | Dev',
-        start_url: '/',
+        start_url: '/index.html',
         background_color: '#4E54C7',
         theme_color: '#9095FB',
         display: 'minimal-ui',
