@@ -10,9 +10,25 @@ const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
+      htmlAttributes={{
+        lang: 'en',
+      }}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content:
+            'Designer, Developer & Entrepreneur creating amazing experiences for the web. @soyoag',
+        },
+        { name: 'author', content: 'Omar Aguinaga' },
+        {
+          name: 'keywords',
+          content:
+            'jQuery, javascript, API, HTML, JS,ES6,CSS,Front End, frontend,front-end, full-stack, full stack, react,mexico, developer, freelancer',
+        },
+        { property: 'og:title', content: 'Omar Aguinaga' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:url', content: 'https://www.aguina.ga/' },
+        { property: 'og:site_name', content: 'Omar Aguinaga' },
       ]}
     />
     <div>{children()}</div>

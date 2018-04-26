@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Omar | Dev',
+    title: 'Omar Aguinaga | Full Stack Developer',
   },
   plugins: [
     {
@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Omar Aguinaga | Web Developer',
+        name: 'Omar Aguinaga | Full Stack Developer',
         short_name: 'Omar | Dev',
         start_url: '/',
         background_color: '#4E54C7',
