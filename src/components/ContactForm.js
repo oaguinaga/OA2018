@@ -18,6 +18,9 @@ const ContactContainer = styled.div`
 `;
 
 const Form = styled.form`
+  .hidden {
+    display: none;
+  }
   width: 380px;
   box-sizing: border-box;
 
@@ -139,9 +142,14 @@ class ContactForm extends Component {
           <Form
             name="contact"
             method="post"
+            action="/thanks"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
+            <div className="hidden">
+              <label htmlFor="name">Don’t fill this out if you're human:</label>
+              <input name="bot-field" placeholder="I'm a bot" type="text" />
+            </div>
             <div>
               <label htmlFor="name">name</label>
               <input name="name" placeholder="John Smith" type="text" />
@@ -165,7 +173,6 @@ class ContactForm extends Component {
               <label htmlFor="budget">budget</label>
               <input name="budget" placeholder="$10k - 20k MXN" type="text" />
             </div>
-
             <button id="submit">Submit</button>
           </Form>
         </div>
