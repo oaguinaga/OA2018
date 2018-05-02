@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import '../styles/index.css'
 import '../styles/normalize.css'
 import '../styles/font.css'
+import '../styles/form.css'
 
 const Layout = ({ children, data }) => (
   <div>

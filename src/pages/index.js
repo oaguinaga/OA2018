@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Landing from '../components/Landing'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
+import React from "react";
+import Link from "gatsby-link";
+import Landing from "../components/Landing";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const IndexPage = ({ data }) => (
   <div>
@@ -14,9 +14,9 @@ const IndexPage = ({ data }) => (
     <Contact />
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query WorkImages {
@@ -41,4 +41,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import TypedText from './TypedText'
-import Button from './Button'
+import TypedText from "./TypedText";
+import Button from "./Button";
 
-import bgPattern from '../img/background-pattern.png'
-import personalLogo from '../img/personal-logo.svg'
+import bgPattern from "../img/background-pattern.png";
+import personalLogo from "../img/personal-logo.svg";
 
-import { media } from '../utils/style-utils'
+import { media } from "../utils/style-utils";
 
 const LandingWrapper = styled.div`
   width: 100vw;
@@ -19,7 +19,7 @@ const LandingWrapper = styled.div`
   clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 100%);
   overflow: hidden;
   margin-bottom: -110px;
-`
+`;
 
 const LandingContainer = styled.div`
   max-width: 1140px;
@@ -48,7 +48,7 @@ const LandingContainer = styled.div`
       font-size: 2.5rem;
     `};
   }
-`
+`;
 
 const PersonalLogo = styled.div`
   display: flex;
@@ -57,14 +57,14 @@ const PersonalLogo = styled.div`
     justify-content: center;
     margin-bottom: 3rem;
   `};
-`
+`;
 const ButtonWrapper = styled.div`
   display: flex;
   ${media.handheld`
     flex-direction: column;
     align-items: center;
   `};
-`
+`;
 class Landing extends Component {
   render() {
     return (
@@ -80,20 +80,16 @@ class Landing extends Component {
           <div className="typed-container">
             <TypedText
               strings={[
-                'amazing experiences for the web.',
-                'user interfaces.',
-                'landing pages.',
-                'corporate websites.',
-                'web applications.',
+                "amazing experiences for the web.",
+                "user interfaces.",
+                "landing pages.",
+                "corporate websites.",
+                "web applications."
               ]}
             />
           </div>
           <ButtonWrapper>
-            <Button
-              mode="primary"
-              text="let's talk"
-              action="mailto:og.aguinaga@gmail.com"
-            />
+            <Button mode="primary" text="let's talk" action="#contact" />
             <Button
               mode="secondary"
               text="my resume"
@@ -103,8 +99,8 @@ class Landing extends Component {
           </ButtonWrapper>
         </LandingContainer>
       </LandingWrapper>
-    )
+    );
   }
 }
 
-export default Landing
+export default Landing;

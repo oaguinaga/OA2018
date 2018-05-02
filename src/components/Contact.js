@@ -1,8 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import Button from './Button'
-
-import topographic from '../img/topographic.png'
+import React from "react";
+import styled from "styled-components";
+import ContactForm from "./ContactForm";
+import topographic from "../img/topographic.png";
 
 const ContactWrapper = styled.div`
   width: 100vw;
@@ -12,43 +11,40 @@ const ContactWrapper = styled.div`
   background-size: 180px, auto;
   clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
   margin-top: -40px;
-`
+`;
 
 const ContactContainer = styled.div`
   max-width: 500px;
   margin: 0 auto;
   padding: 60px 1rem;
   text-align: center;
-
   h3 {
     color: #5258c9;
     font-size: 3.5rem;
   }
 
   p {
-    color: #868be9;
+    color: #5258c9;
     font-size: 1.8rem;
     margin-bottom: 5rem;
   }
-`
+`;
 
 const Contact = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contact">
       <ContactContainer>
-        <h3>Contact</h3>
-        <p>
-          I'm currently accepting new projects and would love to hear about
-          yours. Please take a few minutes to tell me about it.
-        </p>
-        <Button
-          mode="tertiary"
-          text="get started"
-          action="mailto:og.aguinaga@gmail.com"
-        />
+        <div>
+          <h3>Contact</h3>
+          <p>
+            I'm currently accepting new projects and would love to hear about
+            yours. Please take a few minutes to tell me about it.
+          </p>
+        </div>
+        <ContactForm />
       </ContactContainer>
     </ContactWrapper>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
